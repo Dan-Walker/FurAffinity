@@ -1,0 +1,29 @@
+﻿<ContentDialog 
+    x:Class="Fur_Affinity.Views.FirstRunDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="345"
+    d:DesignWidth="550"
+    PrimaryButtonText="Ok">
+    <ContentDialog.TitleTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="ms-appx:///Assets/StoreLogo.png" Width="40" Height="40" Margin="0"/>
+                <TextBlock x:Uid="FirstRunTitle" Text="Welcome!" Margin="10,5,0,0"/>
+            </StackPanel>
+        </DataTemplate>
+    </ContentDialog.TitleTemplate>
+    <ScrollViewer>
+        <StackPanel>
+            <TextBlock x:Uid="FirstRunBody" TextWrapping="WrapWholeWords">
+                <Run>Hello!</Run><LineBreak/>
+                <Run>My name is Dan, I'm the developer of this app.</Run><LineBreak/>
+                <Run>I hope it will be convenient for you to use.</Run>
+                <Run>Good Luck!</Run>
+            </TextBlock>
+        </StackPanel>
+    </ScrollViewer>
+</ContentDialog>

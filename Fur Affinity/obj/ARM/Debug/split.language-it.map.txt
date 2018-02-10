@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-it"
+"ResourceDimensions"		"language-it-it"
+
+[Files]
+"C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\obj\ARM\Debug\split.language-it.pri"			"resources.pri"

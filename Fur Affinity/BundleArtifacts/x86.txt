@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\bin\x86\Debug\Fur Affinity_2.8.1.0_x86_Debug.appx
+SymbolPackage=C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\AppPackages\Fur Affinity_2.8.1.0_Debug_Test\Fur Affinity_2.8.1.0_x86_Debug.appxsym

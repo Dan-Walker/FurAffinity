@@ -1,0 +1,7 @@
+MainPackage=C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\bin\ARM\Debug\Fur Affinity_2.8.1.0_ARM_Debug.appx
+SymbolPackage=C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\AppPackages\Fur Affinity_2.8.1.0_Debug_Test\Fur Affinity_2.8.1.0_ARM_Debug.appxsym
+ResourcePack=C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\bin\ARM\Debug\Fur Affinity_2.8.1.0_language-ru.appx
+ResourcePack=C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\bin\ARM\Debug\Fur Affinity_2.8.1.0_scale-100.appx
+ResourcePack=C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\bin\ARM\Debug\Fur Affinity_2.8.1.0_scale-125.appx
+ResourcePack=C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\bin\ARM\Debug\Fur Affinity_2.8.1.0_scale-150.appx
+ResourcePack=C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\bin\ARM\Debug\Fur Affinity_2.8.1.0_scale-400.appx

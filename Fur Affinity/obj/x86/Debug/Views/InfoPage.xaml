@@ -1,0 +1,76 @@
+﻿<Windows10FallCreatorsUpdate:Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:fcu ="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:cu ="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:Windows10FallCreatorsUpdate="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:Windows10FallCreatorsUpdate1="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:Windows10FallCreatorsUpdate2="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 5)"
+    x:Class="Fur_Affinity.Views.InfoPage"
+    Style="{Windows10FallCreatorsUpdate:StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Windows10FallCreatorsUpdate:Grid x:ConnectionId='1'
+        x:Name="ContentArea"
+        Margin="{Windows10FallCreatorsUpdate:StaticResource MediumLeftRightMargin}">
+
+        <Windows10FallCreatorsUpdate:Grid.RowDefinitions>
+            <Windows10FallCreatorsUpdate:RowDefinition x:ConnectionId='2' x:Name="TitleRow" Height="48"/>
+            <Windows10FallCreatorsUpdate:RowDefinition Height="*"/>
+        </Windows10FallCreatorsUpdate:Grid.RowDefinitions>
+
+        <!--  Adaptive triggers  -->
+        <Windows10FallCreatorsUpdate:VisualStateManager.VisualStateGroups>
+            <Windows10FallCreatorsUpdate:VisualStateGroup x:ConnectionId='3' x:Name="WindowStates">
+                <Windows10FallCreatorsUpdate:VisualState x:ConnectionId='4' x:Name="WideState">
+                    <Windows10FallCreatorsUpdate:VisualState.StateTriggers>
+                        <Windows10FallCreatorsUpdate:AdaptiveTrigger MinWindowWidth="640"/>
+                    </Windows10FallCreatorsUpdate:VisualState.StateTriggers>
+                </Windows10FallCreatorsUpdate:VisualState>
+                <Windows10FallCreatorsUpdate:VisualState x:ConnectionId='5' x:Name="NarrowState">
+                    <Windows10FallCreatorsUpdate:VisualState.StateTriggers>
+                        <Windows10FallCreatorsUpdate:AdaptiveTrigger MinWindowWidth="0"/>
+                    </Windows10FallCreatorsUpdate:VisualState.StateTriggers>
+                    <Windows10FallCreatorsUpdate:VisualState.Setters>
+                        <Windows10FallCreatorsUpdate:Setter Target="TitlePage.Margin" Value="48,0,12,7"/>
+                    </Windows10FallCreatorsUpdate:VisualState.Setters>
+                </Windows10FallCreatorsUpdate:VisualState>
+            </Windows10FallCreatorsUpdate:VisualStateGroup>
+        </Windows10FallCreatorsUpdate:VisualStateManager.VisualStateGroups>
+
+        <Windows10FallCreatorsUpdate:TextBlock x:ConnectionId='6'
+            x:Name="TitlePage"
+            x:Uid="Info_Title"
+            Text="Navigation Item 2"
+            Style="{Windows10FallCreatorsUpdate:StaticResource PageTitleStyle}" />
+
+        <Windows10FallCreatorsUpdate:Grid 
+            Windows10FallCreatorsUpdate:Grid.Row="1" 
+            Background="{Windows10FallCreatorsUpdate:ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <Windows10FallCreatorsUpdate:StackPanel Orientation="Horizontal">
+                <Windows10FallCreatorsUpdate:TextBlock x:Uid="DevelopedWith" Text="DEVELOPED WITH" Margin="10,5,0,0" FontSize="36" FontWeight="Bold"/>
+            </Windows10FallCreatorsUpdate:StackPanel>
+            <Windows10FallCreatorsUpdate:StackPanel Orientation="Horizontal">
+                <Windows10FallCreatorsUpdate:TextBlock x:Uid="VisualStudio" Text="Visual Studio 2017 Professional" Margin="16,63,2,39" FontSize="20" HorizontalAlignment="Left"/>
+                <Windows10FallCreatorsUpdate:Image Source="ms-appx:///Assets/VisualStudio.png" Margin="-272,99,180,0" NineGrid="0,0,0,0" Height="43" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Windows10FallCreatorsUpdate:StackPanel>
+            <Windows10FallCreatorsUpdate:StackPanel Orientation="Horizontal">
+                <Windows10FallCreatorsUpdate:TextBlock x:Uid="WindowsTemplateStudio" Text="Windows Template Studio" Margin="506,64,0,39" FontSize="20" HorizontalAlignment="Left"/>
+                <Windows10FallCreatorsUpdate:Image Source="ms-appx:///Assets/WindowsTemplateStudio.png" Margin="-227,96,-12,0" NineGrid="0,0,0,0" Height="58" VerticalAlignment="Top" HorizontalAlignment="Left" Width="316"/>
+            </Windows10FallCreatorsUpdate:StackPanel>
+            <Windows10FallCreatorsUpdate:StackPanel Orientation="Horizontal">
+                <Windows10FallCreatorsUpdate:TextBlock x:Uid="Developer" Text="DEVELOPER" Margin="10,155,0,0" FontSize="36" FontWeight="Bold"/>
+            </Windows10FallCreatorsUpdate:StackPanel>
+            <Windows10FallCreatorsUpdate:StackPanel Orientation="Horizontal">
+                <Windows10FallCreatorsUpdate:TextBlock x:Uid="DanDeveloper" TextWrapping="WrapWholeWords" Margin="119.4,228,0,0" Text="Dan Walker &#xD;&#xA;Application Developer &#xD;&#xA;" FontWeight="Bold" FontSize="20" TextDecorations="Underline"/>
+            </Windows10FallCreatorsUpdate:StackPanel>
+            <Windows10FallCreatorsUpdate:StackPanel Orientation="Horizontal">
+                <Windows10FallCreatorsUpdate2:PersonPicture ProfilePicture="ms-appx:///Assets/Developer Avatar.png" Margin="16,200,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Windows10FallCreatorsUpdate:StackPanel>
+            <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.-->
+        </Windows10FallCreatorsUpdate:Grid>
+    </Windows10FallCreatorsUpdate:Grid>
+</Windows10FallCreatorsUpdate:Page>
+

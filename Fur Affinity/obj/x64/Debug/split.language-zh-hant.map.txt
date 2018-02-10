@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-zh-hant"
+"ResourceDimensions"		"language-zh-tw"
+
+[Files]
+"C:\Users\Danil\source\repos\Fur Affinity\Fur Affinity\obj\x64\Debug\split.language-zh-hant.pri"			"resources.pri"
